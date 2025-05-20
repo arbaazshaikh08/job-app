@@ -1,7 +1,7 @@
 import { User } from "../models/user.model.js";
 import { ApiError } from "../utils/ApiError.js";
-import { ApiResponse } from "../utils/ApiResponce.js"; 
-import { asyncHandler } from "../utils/AsyncHandlar.js";
+import { ApiResponse } from "../utils/ApiResponce.js";
+import { asyncHandler } from "../utils/AsyncHandler.js";
 import jwt from "jsonwebtoken";
 
 // Generate Access And Refresh Tokens

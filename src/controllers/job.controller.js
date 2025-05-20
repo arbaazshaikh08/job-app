@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import { Job } from "../models/job.model.js";
 import { ApiError } from "../utils/ApiError.js";
 import { ApiResponse } from "../utils/ApiResponce.js";
-import { asyncHandler } from "../utils/AsyncHandlar.js";
+import { asyncHandler } from "../utils/AsyncHandler.js";
 import moment from "moment";
 
 // Create Job
@@ -89,7 +89,6 @@ const getAllJobs = asyncHandler(async (req, res) => {
       .json({ message: error.message || "Something went wrong" });
   }
 });
-
 
 // Update Jobs
 const updateJob = asyncHandler(async (req, res) => {
